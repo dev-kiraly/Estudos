@@ -2,6 +2,31 @@ programa
 {
 	inteiro nAlunosSala
 	inteiro nAlunoAtual = 1
+	
+	
+	
+	funcao md(real n1, real n2)
+		{
+			real media = (n1+n2)/2
+			escreva("A Média do Aluno" + nAlunoAtual + " é " + media + "\n\n")
+		}
+	funcao aprovado()
+		{
+			escreva("Gostaria de Saber se os Alunos foram aprovados?\nSim(1) ou N(2)?")
+			inteiro respostaAprovado
+			enquanto(respostaAprovado > 2)
+			{
+				leia(respostaAprovado)
+				se(respostaAprovado == 1)
+					escreva("\n Ok, Entendi!\n")
+				senao
+					se(respostaAprovado == 2)
+						escreva("\nOk, Obrigado por usar esse Programa!")
+					senao
+						escreva("\nDesculpe, não entendi!\nPor Favor digite 1 para Sim e 2 para não:\n")
+			}
+		}
+	
 	funcao inicio ()
 	{
 		escreva("Oi, esse é meu primeiro projeto!\n")
@@ -20,11 +45,18 @@ programa
 			
 			nAlunoAtual ++
 		}
-		escreva("\nTodas as Medias Calculadas com sucesso!\nObrigado!")
+		escreva("\nTodas as Medias Calculadas com sucesso!\n")
+		aprovado()
 	}
-		funcao md(real n1, real n2){
-			real media = (n1+n2)/2
-			escreva("A Média do Aluno" + nAlunoAtual + " é " + media + "\n\n")
-		}
+}
+
+		
+	}
+}
+
+		aprovado()
+		
+		
+		
 	}
 }
