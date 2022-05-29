@@ -15,7 +15,7 @@ programa
 			escreva("\nSó é Permitido até 100 alunos por sala, insira um número abaixo de 100 alunos para prosseguir:\n")
 			leia(qtdAlunosSala)
 		}
-		escreva("\nOk!")
+		escreva("\nOk!\n")
 	}
 	
 	funcao md(real n1, real n2)
@@ -75,13 +75,7 @@ programa
 					}
 				}	
 			}
-	
-	
-	
-	
-	
-	
-	
+
 	funcao inicio ()
 	{
 		descubraQuantosAlunos()
