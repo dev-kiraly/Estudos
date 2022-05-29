@@ -1,0 +1,30 @@
+programa
+{
+	inteiro nAlunosSala
+	inteiro nAlunoAtual = 1
+	funcao inicio ()
+	{
+		escreva("Oi, esse é meu primeiro projeto!\n")
+		escreva("Vamos calcular as medias das notas de alunos de uma sala.\n")
+		
+		escreva("Quantos alunos voce tem em sua sala?\n")
+		leia(nAlunosSala)
+		enquanto(nAlunoAtual <= nAlunosSala)
+		{
+			escreva("\nInsira a Nota 1 e Nota 2 do aluno " + nAlunoAtual + ":\n")
+			real nota1
+			real nota2
+			leia(nota1)
+			leia(nota2)
+			md(nota1, nota2)
+			
+			nAlunoAtual ++
+		}
+		escreva("\nTodas as Medias Calculadas com sucesso!\nObrigado!")
+	}
+		funcao md(real n1, real n2){
+			real media = (n1+n2)/2
+			escreva("A Média do Aluno" + nAlunoAtual + " é " + media + "\n\n")
+		}
+	}
+}
