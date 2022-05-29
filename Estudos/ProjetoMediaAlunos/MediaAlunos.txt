@@ -3,7 +3,7 @@ programa
 	inteiro qtdAlunosSala = 1
 	inteiro nAlunoAtual = 1
 	inteiro media = 0
-	real boletim[5][100]
+	real boletim[4][100]
 	funcao descubraQuantosAlunos()
 	{
 		escreva("Oi, seja bem vindo ao meu primeiro projeto!\n")
@@ -26,12 +26,10 @@ programa
 	{
 		inteiro l = 2
 		inteiro p = 1
-		para(p=1;p<=100;p++)
+		para(p=1;p<=qtdAlunosSala;p++)
 		{
 			p --
-			se(boletim[l][p] > 0)
-			{
-				se(boletim[l][p] < 7)
+			se(boletim[l][p] < 7)
 				{
 					p++
 					escreva("\nAluno " + p + " está Reprovado.")					
@@ -41,41 +39,110 @@ programa
 					p++
 					escreva("\nAluno " + p + " está Aprovado.")	
 				}					
-			}
-			senao
-			{
-			}			
+						
 		}
 	}
 	
-	funcao aprovado()
+	funcao medOuAprov()
 		{
-			escreva("Gostaria de Saber se quais Alunos foram aprovados?\nSim(1) ou N(2)?\n")
+			escreva("Você quer saber as Médias dos Alunos ou se foram Aprovados?\nMédias(1) ou Aprovados(2)?\n")
 			inteiro respostaAprovado = 0
 			leia(respostaAprovado)
 			enquanto(respostaAprovado >= 3)
 			{
-				escreva("\nDesculpe, não entendi!\nPor Favor digite 1 para Sim e 2 para Não:\n")
+				escreva("\nDesculpe, não entendi!\nPor Favor digite 1 para Médias ou 2 para Aprovados:\n")
 				leia(respostaAprovado)
 			}
 				se(respostaAprovado == 1)
 				{
-					escreva("\nSituação dos Alunos:")
-					quaisAprovados()
+					escreva("\nOk, Segue as Médias dos Alunos:")
+					mediasAlunos()
 				}
 				senao
 				{
 					se(respostaAprovado == 2)
 					{
-						escreva("\nOk, Obrigado por usar esse Programa!")
-					}
-					senao
-					{
+						escreva("\nSituação dos Alunos:")
+						quaisAprovados()
+						escreva("\n\nDeseja saber as Médias de cada Aluno?\nSim(1) ou Não(2)\n")
+						inteiro resp = 0
+						leia(resp)
+						enquanto(resp >= 3)
+						{
+							escreva("\nDesculpe, não entendi!\nPor Favor digite 1 para Sim ou 2 para Não:\n")
+							leia(resp)
+						}
+							se(resp == 1)
+							{
+								escreva("\nOk, Segue as Médias dos Alunos:")
+								mediasAlunos()
+							}
+							senao
+							{
+								se(resp == 2)
+								{
+									escreva("\nOk então, meu trabalho foi finalizado, até a próxima prof!")				
+								}
+								senao
+								{
+									
+								}
+							}
 						
-					}
+					}	
 				}	
 			}
 
+			
+	funcao mediasAlunos()
+	{
+		inteiro l = 2
+		inteiro p = 1
+		para(p=1;p<=qtdAlunosSala;p++)
+		{
+			p --
+			se(boletim[l][p] > 0)
+			{
+				escreva("\nA Média do Aluno " + p++ + " é " + boletim[l][p--] + ".")
+				p++
+			}
+			senao
+			{
+				p++
+				escreva("\nO Aluno " + p + " está Zerado.")
+			}			
+		}
+		escreva("\n\nDeseja saber quais Alunos foram Aprovados ou Reprovados?\n Sim(1) ou Não(2)\n")
+		inteiro resp = 0
+		leia(resp)
+		enquanto(resp >= 3)
+		{
+			escreva("\nDesculpe, não entendi!\nPor Favor digite 1 para Sim ou 2 para Não:\n")
+			leia(resp)
+		}
+			se(resp == 1)
+			{
+				escreva("\nOk, Situação dos Alunos:")
+				quaisAprovados()
+			}
+			senao
+			{
+				se(resp == 2)
+				{
+					escreva("\nOk então, meu trabalho foi finalizado, até a próxima prof!")				
+				}
+				senao
+				{
+					
+				}
+			}	
+		}
+	
+	
+	
+	
+	
+	
 	funcao inicio ()
 	{
 		descubraQuantosAlunos()
@@ -101,6 +168,6 @@ programa
 			nAlunoAtual ++
 		}
 		escreva("Todas as Medias foram Calculadas e Armazenadas com Sucesso!\n")
-		aprovado()
+		medOuAprov()
 	}
 }
