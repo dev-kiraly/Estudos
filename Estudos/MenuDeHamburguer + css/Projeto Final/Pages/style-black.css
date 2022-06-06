@@ -5,11 +5,11 @@ body{
     padding: 0;
     color: white;
     font-family: 'quicksand', sans-serif;
-    background-color: #dddddd;
+    background-color: #353535;
     }
 
 .header-wrapper {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background: linear-gradient(-45deg, #8a8a8a, #5c5c5c, #363636, #202020);
     background-size: 400%, 400%;
@@ -43,37 +43,7 @@ h3 {
     letter-spacing: 2px;
 }
 
-.pergunta{
-    text-align: center;
-    width: 100%;
-    background-color: transparent;
-    margin-top: 8rem;
-}
 
-.social-media{
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.social-media a {
-    text-decoration: none;
-    color:  white;
-    font-size: 24px;
-    padding: 1rem 4rem;
-    border: 1px solid white;
-    min-width: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: .5s cubic-bezier(0.55, 0.025, 0.675, 0.97);
-}
-
-a:hover {
-    color: #303030;
-    background-color: white;
-}
 
 @keyframes backgroundTransitions {
     0%{
@@ -124,7 +94,7 @@ a:hover {
 .checkbox .trace:nth-child(1) {
     top: 26px;
     transform: rotate(0);
-    color: #303030;
+    color: white;
 }
 
 .checkbox .trace:nth-child(2) {
@@ -135,7 +105,7 @@ a:hover {
 .checkbox .trace:nth-child(3) {
     top: 66px;
     transform: rotate(0);
-    color: #303030;
+    color: white;
 }
 
 #toggle {
@@ -150,7 +120,7 @@ a:hover {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    box-shadow: 0px 0px 0px 0px white;
+    box-shadow: 0px 0px 0px 0px #303030;
     z-index: -1;
     transition: 600ms ease-in-out 0s;
 }
@@ -169,6 +139,7 @@ a:hover {
     opacity: 0;
     visibility: hidden;
     transition: 400ms ease-in-out 0s;
+    color: #d3aa4f;
 }
 
 .menu-itens ul{
@@ -181,17 +152,16 @@ a:hover {
     text-transform: uppercase;
     letter-spacing: 4px; 
     font-size: 40px;   
-    color: #303030;
+    color: white;
 }
 
 #toggle:checked + .checkbox .trace:nth-child(1) {
     transform: rotate(45deg);
     top: 48px;
-    background-color: #202020;
+    background-color: white;
 }
 
 #toggle:checked + .checkbox .trace:nth-child(2) {
-    transform: translateX(25px);
     width: 0px;
     visibility: hidden;
     opacity: 0;
@@ -200,21 +170,27 @@ a:hover {
 #toggle:checked + .checkbox .trace:nth-child(3) {
     transform: rotate(-45deg);
     top: 48px;
-    background-color: #202020;
-}
-
-#toggle:checked + .checkbox {
     background-color: white;
 }
 
+#toggle:checked + .checkbox {
+    background-color: #303030;
+}
+
 #toggle:checked ~ .menu {
-    box-shadow: 0px 0px 0px 100vmax white;
+    box-shadow: 0px 0px 0px 100vmax #303030;
     z-index: 1;
 }
 
 #toggle:checked ~ .menu-itens {
     visibility: visible;
     opacity: 1;
+    color : #d3aa4f
+}
+
+.menu-itens ul li a:hover {
+    cursor: pointer;
+    color: #d3aa4f;
 }
 
 
@@ -240,19 +216,19 @@ a:hover {
     align-items: center;
     justify-content: space-evenly;
     width: 95%;
-    background-color: white;
+    background-color: #474747;
 }
 
 .space {
     width: 100%;
     height: 1rem;
-    background-color: #dddddd;
+    background-color: #353535;
 }
 
 .card-1 {
     height: 400px;
     width: 400px;
-    background-image: url('./img-couple-recruiting2.jpg');
+    background-image: url('./Img/25.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -266,7 +242,7 @@ a:hover {
     width: 400px;
     height: 400px;
     margin: 0;
-    background-image: url('./img-men-books.jpg');
+    background-image: url('./Img/24.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -280,7 +256,7 @@ a:hover {
     width: 400px;
     height: 400px;
     margin: 0;
-    background-image: url('./img-people-books.jpg');
+    background-image: url('./Img/20.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -295,7 +271,7 @@ a:hover {
     width: 45%;
     font-family: 'raleway';
     letter-spacing: 1px;
-    color: #202020;
+    color: #ffffff;
     text-align: left;
     transition: 0.5s
 }
@@ -305,7 +281,7 @@ a:hover {
     width: 45%;
     font-family: 'raleway';
     letter-spacing: 1px;
-    color: #5c5c5c;
+    color: #8a8a8a;
     transition: 0.5s
 }
 
@@ -410,8 +386,11 @@ a:hover {
     transition: 0.3s;
 }
 .card-container:hover > .card-text p{
-    color: #202020;
+    color: #ffffff;
     transition: 0.5s;
+}
+.card-container:hover {
+    background-color: #5c5c5c;
 }
 
 .footer {
@@ -420,7 +399,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #363636;
+    background-color: #202020;
 }
 
 

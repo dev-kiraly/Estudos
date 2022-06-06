@@ -9,9 +9,9 @@ body{
     }
 
 .header-wrapper {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
-    background: linear-gradient(-45deg, #8a8a8a, #5c5c5c, #363636, #202020);
+    background: linear-gradient(-45deg, #bdbdbd, #d8d8d8, #f0f0f0,#ffffff);
     background-size: 400%, 400%;
     display: flex;  
     flex-direction: column;
@@ -37,42 +37,11 @@ h2 {
     text-transform: inherit ;
     letter-spacing: 4px;
     text-align: center;
+    color:#5c5c5c
 }
 
 h3 {
     letter-spacing: 2px;
-}
-
-.pergunta{
-    text-align: center;
-    width: 100%;
-    background-color: transparent;
-    margin-top: 8rem;
-}
-
-.social-media{
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.social-media a {
-    text-decoration: none;
-    color:  white;
-    font-size: 24px;
-    padding: 1rem 4rem;
-    border: 1px solid white;
-    min-width: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: .5s cubic-bezier(0.55, 0.025, 0.675, 0.97);
-}
-
-a:hover {
-    color: #303030;
-    background-color: white;
 }
 
 @keyframes backgroundTransitions {
@@ -115,7 +84,7 @@ a:hover {
 .checkbox .trace {
     width: 50px;
     height: 2px;
-    background-color: white;
+    background-color:#303030;
     position: absolute;
     border-radius: 4px;
     transition: 0.5s ease-in-out;
@@ -181,7 +150,7 @@ a:hover {
     text-transform: uppercase;
     letter-spacing: 4px; 
     font-size: 40px;   
-    color: #303030;
+    color: #363636;
 }
 
 #toggle:checked + .checkbox .trace:nth-child(1) {
@@ -217,6 +186,11 @@ a:hover {
     opacity: 1;
 }
 
+.menu-itens ul li a:hover {
+    cursor: pointer;
+    color: #d3aa4f;
+}
+
 
 
 
@@ -240,7 +214,7 @@ a:hover {
     align-items: center;
     justify-content: space-evenly;
     width: 95%;
-    background-color: white;
+    background-color: #f3f3f3;
 }
 
 .space {
@@ -252,7 +226,7 @@ a:hover {
 .card-1 {
     height: 400px;
     width: 400px;
-    background-image: url('./img-couple-recruiting2.jpg');
+    background-image: url('./Img/25.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -266,7 +240,7 @@ a:hover {
     width: 400px;
     height: 400px;
     margin: 0;
-    background-image: url('./img-men-books.jpg');
+    background-image: url('./Img/24.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -280,7 +254,7 @@ a:hover {
     width: 400px;
     height: 400px;
     margin: 0;
-    background-image: url('./img-people-books.jpg');
+    background-image: url('./Img/20.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -413,6 +387,10 @@ a:hover {
     color: #202020;
     transition: 0.5s;
 }
+.card-container:hover {
+    background-color: white;
+}
+
 
 .footer {
     height: 100px;
@@ -420,7 +398,8 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #363636;
+    background-color: white;
+    color: #303030;
 }
 
 
