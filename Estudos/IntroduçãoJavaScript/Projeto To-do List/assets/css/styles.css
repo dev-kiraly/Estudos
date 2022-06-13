@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Raleway:wght@500&display=swap');
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 70px;
+    font-family: 'raleway';
+    color: #d3aa4f;
+    margin-bottom: 0;
+    letter-spacing: 4px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+
+@keyframes backgroundTransitions {
+    0%{
+        background-position: 0% 80%;
+    }
+
+    50%{
+        background-position: 80% 100%;
+    }
+
+    100%{
+        background-position: 0% 90%;
+    }
+}
+
+body {
+    margin-top: 0;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(-45deg, #aaaaaa, #818181, #555555, #353535);
+    background-size: 400%, 400%;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: backgroundTransitions 8s ease-in-out infinite;
+}
+
+button {
+    margin: 10px;
+    height: 40px;
+    width: 120px;
+    border-radius: 50px;
+    border: 2px solid #d3aa4f;
+    background-color: white;
+    color: #555555;
+    font-size: 16pt;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 265px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 4px solid white;
+  }
+  
+#tasks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    color: #d3aa4f;
+  }
+  
+.task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+
+  
+:checked + label {
+    text-decoration: line-through;
+    color: black;
+  }
