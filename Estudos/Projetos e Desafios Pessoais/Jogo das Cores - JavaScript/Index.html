@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/css/Styles.css">
+    <title>Jogo das Cores</title>
+</head>
+<header>
+    <h1>JOGO DAS CORES</h1>
+    <div id="menu">
+        <div id="newColor" onclick="newGame()">Nova Cor</div>
+        <div id="difficulty">
+            <div id="easy" class="easyAndHard" onclick="easyModeSelected()">Fácil</div>
+            <div id="hard" class="easyAndHard" onclick="hardModeSelected()">Difícil</div>
+        </div>
+    </div>
+</header>
+<body>
+    <div id="body">
+        <div id="rgb"></div>
+        <div id="guessTheColor"></div>
+        <div id="container1" class="boxesContainer">
+            <div id="box1" class="box" onclick="choose(1)"></div>
+            <div id="box2" class="box" onclick="choose(2)"></div>
+            <div id="box3" class="box" onclick="choose(3)"></div>
+        </div>
+        <div id="container2" class="boxesContainer">
+            <div id="box4" class="box" onclick="choose(4)"></div>
+            <div id="box5" class="box" onclick="choose(5)"></div>
+            <div id="box6" class="box" onclick="choose(6)"></div>
+        </div>
+
+    
+    </div>
+    <script src="Assets/js/Scripts.js"></script>
+</body>
+</html>
