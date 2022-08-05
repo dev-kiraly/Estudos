@@ -1,6 +1,6 @@
 # Tip calculator - Frontend Mentor Project
 
-(./design/CustomPercent.jpg)
+![Final design of the challenge](./design/CustomPercent.jpg)
 
 ## Welcome! 👋
 
