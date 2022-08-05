@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/Css/Styles.css">
+    <title>Formulários</title>
+</head>
+<body>
+    <div id="imgContainer">
+        <img src="./Assets/Img/galaxy-s21_banner_goto_fe_l.jpg" id="imgPhone"/>
+        
+            <div id="title">
+                <h1>Galaxy S21 FE | S21 | S21+ 5G</h1>
+                <h2>Tudo o que você ama,<br>
+                    ainda mais épico!</h2>
+            </div>
+    </div>
+    <div id="formContainer">
+        <div id="formDiv">
+            <div id="form">
+                <form method="post" id="formulario" action="mailto:dev.kiraly@gmail.com">
+                    
+                    <div id="preOrder">
+                        <h3>Pré Lançamento</h3>
+                        <h4>Solicite Abaixo</h4>
+                    </div>
+                    <fieldset>
+                        <div class="iFieldsetDiv">
+                            <legend id="iIdentify">Contato</legend>
+                            
+                            <p class="row">
+                                <label for="iFirstName">Nome</label>
+                                <input type="text" name="nFirstName" id="iFirstName" placeholder="Primeiro Nome" size="20" maxlength="20"/>
+                                <input type="text" name="nLastName" id="iLastName" placeholder="Sobrenome" size="40" maxlength="40"/>
+                            </p>
+                            <p class="row">
+                                <label for="iEmail">Email</label>
+                                <input type="email" name="nEmail" id="iEmail" placeholder="dev.kiraly@gmail.com" size="50" maxlength="50"/>
+                            </p>
+                            <p class="row"> 
+                                <label for="iDDD">Telefone</label>
+                                <input type="tel" name="nDDI" id="iDDI" placeholder="DDI" size="3" maxlength="3" value="+55"/>
+                                <input type="tel" name="nDDD" id="iDDD" placeholder="DDD" size="3" maxlength="3"/>
+                                <input type="tel" name="nPhone" id="iPhone" placeholder="981937276" size="15" maxlength="9"/>
+                            </p>
+                        </div>
+                    </fieldset>
+                
+                    <fieldset>
+                        <div class="iFieldsetDiv">
+                            <legend>Celular</legend>
+                            <div id="iModel">
+                                <p>
+                                    <label for="nModel">Modelo</label>
+                                    <br>
+                                    <input type="radio" name="nModel" id="iS21FE" checked>                            
+                                    <label for="iS21FE">S21 FE</label>
+                            
+                                    <input type="radio" name="nModel" id="iS215G">
+                                    <label for="iS215G">S21 5G</label>
+                                
+                                    <input type="radio" name="nModel" id="iS21+5G">                            
+                                    <label for="iS21+5G">S21+ 5G</label>
+                                </p>
+                            </div>
+                            
+                            <div id="iStorage">
+                                <p>
+                                    <label for="nStorage">Armazenamento</label>
+                                    <br>
+                                    <input type="radio" name="nStorage" id="i64Gb" checked>
+                                    <label for="i64Gb">64GB</label>
+                                
+                                    <input type="radio" name="nStorage" id="i128Gb">
+                                    <label for="i128Gb">128GB</label>
+                                
+                                    <input type="radio" name="nStorage" id="i256Gb">                            
+                                    <label for="i256Gb">256Gb</label>
+                                
+                                    <input type="radio" name="nStorage" id="i512GB">                            
+                                    <label for="i512GB">512GB</label>
+                            
+                                    <input type="radio" name="nStorage" id="i1TB">                            
+                                    <label for="i1TB">1TB</label>
+                                </p>
+                            </div>
+                            
+                            <div id="iColor">
+                                <p>
+                                    <label for="nColor">Cor</label>
+                                    <br>
+                                    <input type="radio" name="nColor" id="iViolet" checked>
+                                    <label for="iViolet">Violet</label>
+                                
+                                    <input type="radio" name="nColor" id="iSilver">
+                                    <label for="iSilver">Silver</label>
+                                
+                                    <input type="radio" name="nColor" id="iBlack">                            
+                                    <label for="iBlack">Black</label>
+                                
+                                    <input type="radio" name="nColor" id="iPink">                            
+                                    <label for="iPink">Pink</label>
+                                </p>
+                            </div>
+                            
+                            
+                                
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="iFieldsetDiv">
+                            <legend>Porquê Você?</legend>
+                            <p>
+                                <label for="iPQVC">Explique por quê você deveria receber a prioridade da pré compra:</label>
+                                <textarea name="nPQVC" id="iPQVC" placeholder="  Digite aqui sua Mensagem" cols="80" rows="7 "></textarea>
+                            </p>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="iFieldsetDiv">
+                            <legend>Enviar Solicitação</legend>
+                            <p id="iEnviar">
+                                <label for="iPQVC">Confira se está tudo certo, e envie sua solicitação:</label>
+                                <button type="submit" id="iSubmit">Enviar</button>
+                            </p>
+                        </div>
+                    </fieldset>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="Assets/Js/Script.js"></script>
+</body>
+</html>

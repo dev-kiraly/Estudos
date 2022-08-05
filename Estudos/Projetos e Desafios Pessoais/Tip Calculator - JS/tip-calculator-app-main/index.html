@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  
+  <style>
+    
+  </style>
+</head>
+<body>
+
+  <h1>Tip Calculator</h1>
+  <div id="cardWrapper">
+    <div id="card">
+      <div id="inputs" class="subCards">
+
+        <div id="bill">
+          <div class="inputTitle">
+            <h5>Bill</h5>
+            <h5 id="error">Can't be zero</h5>
+          </div>
+          <div id="billBox" class="inputBox">
+            <img src="./images/icon-dollar.svg" class="icon" />
+            <input type="number" class="input" id="inputBill" placeholder="0" maxlength="5" max="5">
+          </div>
+        </div>
+
+        <div id="selectTip">
+          <h5>Select Tip %</h5>
+          <div class="percentHolder">
+
+            <label for="percent5" class="percentLabel">
+              <input type="radio" id="percent5" name="percentSelected" value="5" hidden>
+                <div  class="percent">
+                  <p class="percentP">
+                    5%
+                  </p>
+                </div>
+              </input>
+            </label>
+
+            <label for="percent10" class="percentLabel">
+              <input type="radio" id="percent10" name="percentSelected" value="10" hidden checked>
+                <div  class="percent">
+                  <p class="percentP">
+                    10%
+                  </p>
+                </div>
+              </input>
+            </label>
+
+            <label for="percent15" class="percentLabel">
+              <input type="radio" id="percent15" name="percentSelected" value="15" hidden>
+                <div  class="percent">
+                  <p class="percentP">
+                    15%
+                  </p>
+                </div>
+              </input>
+            </label>
+          </div>
+
+          <div class="percentHolder">
+            
+            <label for="percent25" class="percentLabel">
+              <input type="radio" id="percent25" name="percentSelected" value="25" hidden>
+                <div  class="percent">
+                  <p class="percentP">
+                    25%
+                  </p>
+                </div>
+              </input>
+            </label>
+
+            <label for="percent50" class="percentLabel">
+              <input type="radio" id="percent50" name="percentSelected" value="50" hidden>
+                <div  class="percent">
+                  <p class="percentP">
+                    50%
+                  </p>
+                </div>
+              </input>
+            </label>
+
+            <label for="percentCustom" class="percentLabel">
+              <input type="radio" id="percentCustom" name="percentSelected" class="percentRadio" hidden>
+                <div class="percent" id="custom">
+                  <input type="number" id="inputCustom" placeholder="Custom" onclick="markCustomDiv()"/>
+                </div>
+              </input>
+            </label>
+          </div>
+
+        </div>
+        <div id="numPeople">
+            <h5>Number of People</h5>
+          <div class="inputBox">
+            <img src="./images/icon-person.svg" class="icon"/>
+            <input type="number" class="input" maxlength="6" id="inputPeoples" class="inputActive" placeholder="0" value="2" min="1">
+          </div>
+        </div>
+      </div>
+
+      <div id="outputs" class="subCards">
+        <div id="resultHolder">
+
+          <div id="tipPerPerson" class="result">
+            <div class="resultText">
+              <h3>Tip Amount</h3>
+              <p>/ person</p>
+            </div>
+            <div id="tipPerPersonValue" class="totals">
+              <h2>$</h2>
+              <h2 id="tipPerPersonOutput">0</h2>
+            </div>
+          </div>
+
+          <div id="totalPerPerson" class="result">
+            <div class="resultText">
+              <h3>Total</h3>
+              <p>/ person</p>
+            </div>
+            <div id="totalPerPersonValue" class="totals">
+              <h2>$</h2>
+              <h2 id="totalPerPersonOutput">0</h2>
+            </div>
+          </div>
+
+
+          <div id="totalBill" class="result">
+            <div class="resultText">
+              <h3>Total</h3>
+              <p>with tip</p>
+            </div>
+            <div id="totalBillValue" class="totals">
+              <h2>$</h2>
+              <h2 id="totalBillOutput">0</h2>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="resetHolder">
+          <button id="buttonReset" onclick="reset()">RESET</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/dev-kiraly" target="_blank">Jonathan Kiraly</a>.
+  </div>
+
+
+  <script src="./js/scripts.js"></script>
+</body>
+</html>

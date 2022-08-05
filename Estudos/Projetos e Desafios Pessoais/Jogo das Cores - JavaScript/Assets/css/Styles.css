@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Poiret+One&display=swap');
+
+header {
+    margin: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0;
+    width: 100vw;
+    height: 140px;
+    background-color: darkcyan;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Outfit';
+    font-size: 90px;
+    color: white;
+}
+
+#menu {
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(2, 184, 184);
+    display: flex;
+    flex-direction: row;
+}
+
+#newColor {
+    background-color: rgb(173, 235, 235);
+    width: 150px;
+    height: 50px;
+    margin-left: 250px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    font-family: Poiret One;
+    font-weight:bold;
+    font-size: 25px;
+    color: darkcyan;
+    cursor: pointer;
+}
+
+#newColor:hover {
+    background-color: darkcyan;
+    color: white;;
+    transition: 0.3s;
+}
+
+#difficulty {
+    display: flex;
+    flex-direction: row;
+    margin-left: 400px;
+}
+
+.easyAndHard {
+    background-color: rgb(173, 235, 235);
+    width: 150px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    font-family: Poiret One;
+    font-weight:bold;
+    font-size: 25px;
+    color: darkcyan;
+    cursor: pointer;
+}
+
+.easyAndHard:hover {
+    background-color: darkcyan;
+    color: white;
+    transition: 0.3s;
+}
+
+
+
+#body {
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+
+
+#rgb {
+    margin: 20px 0 0 0;
+    font-family: Outfit;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(51, 51, 51);
+}
+
+#guessTheColor {
+    margin: 0px;
+    font-family: Outfit;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    font-weight:bold;
+}
+
+.boxesContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    cursor: pointer;
+}

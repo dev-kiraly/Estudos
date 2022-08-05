@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Quicksand:wght@300;400;600&display=swap');
+
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: space-around;
+    font-family: 'Quicksand', sans-serif; 
+}
+
+#imgContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+#imgPhone {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+}
+
+#title {
+    text-align: center;
+    margin:  40px 0 0 -550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 35px;
+    margin: 0;
+}
+
+h2 {
+    
+    font-size: 30px;
+    margin: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+#formContainer {
+    margin: 0;
+    padding: 50px;
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+#formDiv {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    padding: 40px;
+    display: flex;
+    
+    align-items: center;
+    background-color: rgb(227, 241, 255);
+    border-radius: 20px;
+    
+}
+
+#form {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+#preOrder {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 50px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h4 {
+    font-size: 30px;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+fieldset {
+    margin: 15px;
+    width: 600px;
+    border: none;
+    background-color: rgb(241, 248, 255);
+    border-radius: 15px;
+}
+
+legend {
+    font-size: 30px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+    margin-left: 15px;
+    border: solid 2px white;
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+input:hover {
+    background-color: rgb(227, 241, 255);
+    border: solid 2px rgb(160, 208, 255);
+}
+
+input:active, input:focus {
+    border: solid 2px rgb(160, 208, 255);
+    outline: none;
+}
+
+
+
+textarea {
+    margin: 10px 0 0 15px;
+    border: solid 2px white;
+    border-radius: 15px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+textarea:hover {
+    background-color: rgb(227, 241, 255);
+    border: solid 2px rgb(160, 208, 255);
+}
+
+textarea:active, textarea:focus {
+    border: solid 2px rgb(160, 208, 255);
+    outline: none;
+}
+
+#iEnviar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#iSubmit {
+    border: none;
+    background-color: rgb(160, 208, 255);
+    color: rgb(33, 100, 167);
+    width: 130px;
+    height: 40px;
+    font-size: 25px;
+    border: solid 2px rgb(160, 208, 255);
+    border-radius: 5px;
+}
+
+#iSubmit:hover {
+    background-color: rgb(125, 183, 241);
+    border: solid 2px rgb(160, 208, 255);
+}
+
+ 
