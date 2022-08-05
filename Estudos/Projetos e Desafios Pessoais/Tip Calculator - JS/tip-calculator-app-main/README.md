@@ -1,6 +1,6 @@
 # Tip calculator - Frontend Mentor Project
 
-![Final design of the challenge](./design/CustomPercent.jpg)
+![Final design of the challenge](./images/CustomPercent.jpg)
 
 ## Welcome! 👋
 
@@ -20,6 +20,10 @@ Inside the `/design` folder you will find the wireframe.
 
 The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
 
-## I did more!
+## I went beyond!
 
 I include a final bill that contains the value of bill + tip.
+
+## Watch the app working
+
+Inside the '/images/' folder you'll find a video of the app in action.
