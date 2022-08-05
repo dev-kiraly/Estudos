@@ -90,6 +90,7 @@ h5 {
 
 .inputBox:focus-within {
     border: 2px solid hsl(172, 67%, 45%);
+    background-color: hsl(173, 63%, 93%);
 }
 
 input:focus, select:focus {
@@ -102,7 +103,7 @@ input:focus, select:focus {
 .inputBox {
     display: flex;
     flex-direction: row;
-    background-color: hsl(0, 0%, 88%);
+    background-color: hsl(0, 0%, 95%);
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -191,8 +192,8 @@ input:checked + .percent, input:checked + #custom{
 }
 
 #custom {
-    background-color: hsl(0, 0%, 88%);
-    border: 2px solid hsl(0, 0%, 88%);
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
     color: hsl(183, 100%, 15%); 
     cursor:text;
 }
