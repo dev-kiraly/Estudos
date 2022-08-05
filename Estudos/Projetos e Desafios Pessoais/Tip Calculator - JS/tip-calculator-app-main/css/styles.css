@@ -34,13 +34,14 @@ h1 {
     font-size: 50px;
     margin: 20px 0 0 0;
     color: hsl(183, 100%, 15%);
+    text-align: center;
 }
 
 
 #cardWrapper {
     margin: 30px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -207,8 +208,11 @@ input:checked + .percent, input:checked + #custom{
     font-size: 22px;
     color: hsl(183, 100%, 15%);
     font-family: 'Space Mono', monospace;
-    font-weight: 700;
-    
+    font-weight: 700;  
+}
+
+#inputCustom::placeholder {
+    text-align: center;
 }
 
 input:checked + #custom{
@@ -260,6 +264,7 @@ input:checked + #custom{
     display: flex;  
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .resultText {
@@ -334,11 +339,96 @@ input:checked + #custom{
 
 
 
+@media (max-width: 1000px) {
 
+    body {
+        justify-content: space-between;
+    }
 
+    h1 {
+        font-size: 25px;
+        margin: 15px;
+    }
 
+    #cardWrapper {
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
 
+    #card{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        border-radius: 10px 10px 0 0;
+    }
 
+    .subCards {
+        margin: 5%;
+    }
 
+    #inputs {
+        width: 80%;
+        height: 45%;
+        min-height: 320px;
+        max-height: 380px;
+        justify-content: space-between;
+    }
 
+    #bill {
+        margin-top: 17px;
+    }
 
+    #selectTip {
+        margin-top: 17px;
+        height: auto;
+    }
+    
+    .percentLabel {
+        margin-top: 17px;
+    }
+
+    #numPeople {
+        margin-top: 17px;
+    }
+
+    #outputs {
+        width: 80%;
+        height: 40%;
+        min-height: 250px;
+        max-height: 300px;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    #resultHolder {
+        margin: 10px 0 0 0;
+        height: 60%;
+    }
+
+    .result {
+        height: 50px;
+    }
+    
+    .resultText h3 {
+        font-size: 13px;
+    }
+
+    .resultText p {
+        font-size: 12px;
+    }
+
+    .totals h2{
+        font-size: 32px;
+    }
+
+    #resetHolder {
+        height: 70px;
+        justify-content: baseline;
+        margin-top: 10px;
+    }
+
+}
