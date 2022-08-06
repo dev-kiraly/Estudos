@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/jk-logo.png">
+  <title>Price Components</title>
+</head>
+<body>
+  <div id="toggleTitleContainer">
+    <h1>Our Pricing</h1>
+    <div id="toggleHolder">
+      <p id="annually">Annually</p>
+
+      <label for="toggle" id="toggleBG">
+        <input id="toggle" name="toggle" type="checkbox" onclick="toggleChange()" hidden/>
+        <div id="circleToggle"></div>
+      </label>
+
+      <p id="monthly">monthly</p>
+    </div>
+
+  </div>
+
+
+
+  <div id="cardContainer">
+
+
+    <div id="basicCard" class="card">
+      <div class="contentHolder">
+        <div class="titleHolder">
+          <h2 class="cardTitle">Basic</h2>
+        </div>
+        
+        <div class="priceHolder">
+          <h2 class="moneySign">$</h2>
+          <h2 id="basicPrice" class="price"></h2>
+        </div>
+        
+        <div id="infoHolderBasic" class="infoHolder">
+          <div class="strike"></div>        
+          <div class="info"></div>        
+          <div class="strike"></div>        
+          <div class="info"></div>        
+          <div class="strike"></div>        
+          <div class="info"></div>        
+          <div class="strike"></div>           
+        </div>
+        
+        <div class="btnHolder">
+          <button class="btnLearnMore" value="basic">LEARN MORE</button>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+
+    <div id="professionalCard" class="card">
+      <div class="contentHolder">
+        <div class="titleHolder">
+          <h2 id="titleProf" class="cardTitle">Professional</h2>
+        </div>
+        
+        <div id="priceProf" class="priceHolder">
+          <h2 class="moneySign">$</h2>
+          <h2 id="profPrice" class="price"></h2>
+        </div>
+        
+        <div  id="infoHolderProf" class="infoHolder">
+          <div class="strike"></div>        
+          <div class="info"></div>        
+          <div class="strike"></div>        
+          <div class="info"></div>        
+          <div class="strike"></div>        
+          <div class="info"></div>        
+          <div class="strike"></div> 
+        </div>
+        
+        <div class="btnHolder">
+          <button id="btnProf" class="btnLearnMore" value="professional">LEARN MORE</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="masterCard" class="card">
+      <div class="contentHolder">
+        <div class="titleHolder">
+          <h2 class="cardTitle">Master</h2>
+        </div>
+        
+        <div class="priceHolder">
+          <h2 class="moneySign">$</h2>
+          <h2 id="masterPrice" class="price"></h2>
+        </div>
+        
+        <div id="infoHolderMaster" class="infoHolder">
+          <div class="strike"></div>        
+          <div class="info"></div>        
+          <div class="strike"></div>        
+          <div class="info"></div>        
+          <div class="strike"></div>        
+          <div class="info"></div>        
+          <div class="strike"></div>          
+        </div>
+        
+        <div class="btnHolder">
+          <button class="btnLearnMore" value="master">LEARN MORE</button>
+        </div>
+      </div>
+    </div> 
+
+
+
+  </div>
+  <script src="./js/scripts.js"></script>
+</body>
+</html>
+
+

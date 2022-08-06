@@ -1,0 +1,295 @@
+/*
+
+- Linear Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%)
+- Very Light Grayish Blue: hsl(240, 78%, 98%)
+- Light Grayish Blue: hsl(234, 14%, 74%)
+- Grayish Blue: hsl(233, 13%, 49%)
+- Dark Grayish Blue: hsl(232, 13%, 33%)
+
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: hsl(240, 78%, 98%);
+    align-items: center;
+    justify-content: center;
+    color: hsl(233, 13%, 49%);
+}
+
+
+
+#toggleTitleContainer {
+    align-items: center;
+    margin: 25px;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+#toggleHolder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#toggleHolder p {
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+#toggleBG {
+    background: linear-gradient(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    width: 55px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    margin: 10px;
+}
+
+#circleToggle {
+    width: 25px;
+    height: 25px;
+    margin: 3px;
+    background-color: #fff;
+    border-radius: 25px;
+    transition: 0.2s ease-in-out;
+}
+
+#toggle:checked + #circleToggle {
+    transform: translateX(24px);
+
+}
+
+
+
+
+#cardContainer {
+    width: 74%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 33%;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 20px #d3d3d3;
+}
+
+.contentHolder {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0 40px 0;
+}
+
+.titleHolder {
+    margin: 0;
+}
+
+.cardTitle {
+    margin: 0;
+    font-size: 17px;
+}
+
+
+.priceHolder {
+    margin: 15px 0 15px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.moneySign {
+    color: hsl(232, 13%, 33%);
+    margin: 10px;
+    font-size: 30px;
+}
+
+.price {
+    color: hsl(232, 13%, 33%);
+    margin: 0 10px 0 10px;
+    font-size: 70px;
+}
+
+.infoHolder {
+    width: 85%;
+    height: 150px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.strike {
+    width: 100%;
+    height: 1px;
+    background-color:hsl(0, 0%, 81%);
+    opacity: 50%;
+}
+
+.info {
+    font-size: 14px;
+}
+
+.btnHolder {
+    margin-top: 30px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: baseline;
+}
+
+.btnLearnMore {
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    border: 1px solid  hsl(236, 72%, 79%);
+    background: linear-gradient(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btnLearnMore:hover {
+    background: transparent;
+    border: 1px solid hsl(237, 63%, 64%);
+    color: hsl(237, 63%, 64%);
+}
+
+
+
+
+#basicCard {
+    border-radius: 10px 0 0 10px;
+}
+
+
+
+
+#professionalCard {
+    padding: 20px 0 20px 0;
+    border-radius: 10px;
+    background: linear-gradient(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    z-index: 1;
+}
+
+#titleProf {
+    color: #fff;
+}
+
+#priceProf h2 {
+    color: #fff;
+}
+
+#infoHolderProf {
+    color: #fff;
+}
+
+#btnProf {
+    background: #fff;
+    color: hsl(237, 63%, 64%);
+    
+    border: 1px solid #fff;
+}
+
+#btnProf:hover {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+
+
+
+#masterCard {
+    border-radius: 0 10px 10px 0;
+}
+
+
+
+
+@media (max-width: 1200px) {
+    #cardContainer {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 80%;
+        max-width: 800px;
+        min-width: 300px;
+        margin: 20px 0 20px 0;
+    }
+
+    #basicCard {
+        border-radius: 10px;
+    }
+
+    #masterCard {
+    border-radius: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
